@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameNews - 专业游戏资讯平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>GameNews</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#fps" class="nav-link">FPS游戏</a>
+                <a href="#mmo" class="nav-link">网游</a>
+                <a href="#strategy" class="nav-link">策略游戏</a>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="搜索游戏..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 英雄区域 -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h2 class="hero-title">发现最新游戏资讯</h2>
+                <p class="hero-subtitle">专业、及时、深度的游戏新闻报道</p>
+                <button class="cta-button">开始探索</button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="game-card floating" data-game="cf">
+                        <img src="images/cf.png" alt="穿越火线">
+                        <h3>穿越火线</h3>
+                    </div>
+                    <div class="game-card floating" data-game="apex">
+                        <img src="images/apex.png" alt="Apex Legends">
+                        <h3>Apex Legends</h3>
+                    </div>
+                    <div class="game-card floating" data-game="valorant">
+                        <img src="images/valorant.png" alt="无畏契约">
+                        <h3>无畏契约</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FPS游戏分类 -->
+        <section class="game-category" id="fps">
+            <div class="category-header">
+                <h2 class="category-title">FPS游戏</h2>
+                <p class="category-subtitle">第一人称射击游戏的精彩世界</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" data-game="cf" data-url="https://cf.qq.com">
+                    <div class="game-image">
+                        <img src="images/cf.png" alt="穿越火线">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>穿越火线</h3>
+                        <p>经典FPS射击游戏，全球玩家超过6亿</p>
+                        <div class="game-tags">
+                            <span class="tag">射击</span>
+                            <span class="tag">竞技</span>
+                            <span class="tag">团队</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="apex" data-url="https://www.ea.com/games/apex-legends">
+                    <div class="game-image">
+                        <img src="images/apex.png" alt="Apex Legends">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Apex Legends</h3>
+                        <p>免费大逃杀射击游戏，英雄技能丰富</p>
+                        <div class="game-tags">
+                            <span class="tag">大逃杀</span>
+                            <span class="tag">英雄</span>
+                            <span class="tag">免费</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="valorant" data-url="https://playvalorant.com">
+                    <div class="game-image">
+                        <img src="images/valorant.png" alt="无畏契约">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>无畏契约</h3>
+                        <p>Riot Games出品的战术射击游戏</p>
+                        <div class="game-tags">
+                            <span class="tag">战术</span>
+                            <span class="tag">技能</span>
+                            <span class="tag">竞技</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 网游分类 -->
+        <section class="game-category" id="mmo">
+            <div class="category-header">
+                <h2 class="category-title">网游</h2>
+                <p class="category-subtitle">大型多人在线角色扮演游戏</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" data-game="yanyun" data-url="https://yanyun.163.com">
+                    <div class="game-image">
+                        <img src="images/yysls.png" alt="燕云十六声">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>燕云十六声</h3>
+                        <p>网易出品的开放世界武侠网游</p>
+                        <div class="game-tags">
+                            <span class="tag">武侠</span>
+                            <span class="tag">开放世界</span>
+                            <span class="tag">MMORPG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="blade3" data-url="https://bns.qq.com">
+                    <div class="game-image">
+                        <img src="images/jianling3.png" alt="剑灵3">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>剑灵3</h3>
+                        <p>经典武侠MMORPG续作</p>
+                        <div class="game-tags">
+                            <span class="tag">武侠</span>
+                            <span class="tag">MMORPG</span>
+                            <span class="tag">动作</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="tianlong" data-url="https://tl.qq.com">
+                    <div class="game-image">
+                        <img src="images/tlbb.png" alt="天龙八部">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>天龙八部</h3>
+                        <p>经典武侠网游，金庸正版授权</p>
+                        <div class="game-tags">
+                            <span class="tag">武侠</span>
+                            <span class="tag">经典</span>
+                            <span class="tag">MMORPG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 策略游戏分类 -->
+        <section class="game-category" id="strategy">
+            <div class="category-header">
+                <h2 class="category-title">策略游戏</h2>
+                <p class="category-subtitle">考验智慧与策略的游戏世界</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" data-game="tft" data-url="https://lol.qq.com/tft">
+                    <div class="game-image">
+                        <img src="images/jinchanhcan.png" alt="金铲铲之战">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>金铲铲之战</h3>
+                        <p>自走棋策略游戏，英雄联盟IP</p>
+                        <div class="game-tags">
+                            <span class="tag">自走棋</span>
+                            <span class="tag">策略</span>
+                            <span class="tag">竞技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="clash" data-url="https://clashroyale.com">
+                    <div class="game-image">
+                        <img src="images/huangshi.png" alt="皇室战争">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>皇室战争</h3>
+                        <p>Supercell出品的实时策略卡牌游戏</p>
+                        <div class="game-tags">
+                            <span class="tag">卡牌</span>
+                            <span class="tag">实时</span>
+                            <span class="tag">策略</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="hearthstone" data-url="https://hearthstone.blizzard.com">
+                    <div class="game-image">
+                        <img src="images/luishi.png" alt="炉石传说">
+                        <div class="game-overlay">
+                            <button class="play-button">进入官网</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>炉石传说</h3>
+                        <p>暴雪出品的数字卡牌游戏</p>
+                        <div class="game-tags">
+                            <span class="tag">卡牌</span>
+                            <span class="tag">策略</span>
+                            <span class="tag">暴雪</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GameNews</h3>
+                <p>专业的游戏资讯平台</p>
+            </div>
+            <div class="footer-section">
+                <h4>游戏分类</h4>
+                <ul>
+                    <li><a href="#fps">FPS游戏</a></li>
+                    <li><a href="#mmo">网游</a></li>
+                    <li><a href="#strategy">策略游戏</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <p>邮箱: contact@gamenews.com</p>
+                <p>电话: 400-123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GameNews. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
